@@ -1,54 +1,110 @@
-@font-face {
-    font-family: raj;
-    src: url(./EagleHorizonP.ttf);
-}
-@font-face {
-    font-family: raja;
-    src: url(./Rockybilly.ttf);
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: rockybilly ;
 }
-html, body{
-    height: 100%;
-    width: 100%;  
-}
-
-#box1{
+html body{
     height: 100%;
     width: 100%;
-    background-image: url(./nissan.avif);
-    background-size: cover;
-    background-position:center;
+}
+#main{
+    height: 755px;
+    width: 100%;
+   background-image:linear-gradient(aquamarine ,white,aquamarine) ;
+}
+#navbar img {
+    position: relative;
+    height:40px;
+    width: 40px;
+    left:30px;
+    top: 20px;
+
+}
+#navbar a{
     text-align: center;
-    padding-top: 50px;
+    text-decoration: none;
+   
+    margin-left: 9.5%;
+    color: black;
+}
+#navbar button{
+    height: 35px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    margin-left:150px;  
+    color: black;
+    border: none;
+    border-radius: 50px;
 
 }
-#box1 h1{
-  color: beige;
-  font-family: raj;
-  font-size: 100px;
-  font-style:italic;
-  font-weight: 400;
+
+    #btnleft{
+        height: 200px;
+        width: 200px;
+        position:absolute;
+        top: 70%;
+        left: 30px;
+        
+        
+    }
+    #btnleft h3{
+       
+        padding-top: 15px;
+    }
+
+    #main h1{
+        text-align: center;
+        font-size: 300px;
+        font-weight: 400;
+        
+    }
+#btnbar{
+position: absolute;
+bottom: 10px;
+left: 30px;
+
 
 }
-#box1 button{
-    margin: 30px;
-    padding: 15px 30px ;
-   background-color:#460204;
-   font-size: 600;
-   font-weight: 600;
-   color: beige;
-   border: none;
-   border-radius:50px;
+#btnbar button{
+    position: absolute;
+      height: 35px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    margin-left:1190px;
+    color: black;
+    border: none;
+    border-radius: 50px;
+   
+
+}
+
+
+ #main >#image1{
+     position: absolute;
+    height: 300px;
+    width: 200px;
+    left: 40% ;
+    top: 250px;
+    border-radius: 10%;
     
 }
-
-footer{
-    
-    text-align: center;
-    background-image: linear-gradient(90deg, #525F71,#090B0F );
-
+#main >#image2{
+    position: absolute;
+    height: 300px;
+    width: 450px;
+    left: 70% ;
+    top: 360px;
+}
+#main >#image3{
+     position: absolute;
+   height: 300px;
+    width: 500px;
+    left:45% ;
+    top: 410px;
+    border-radius: 10%;
 }
