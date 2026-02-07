@@ -1,109 +1,54 @@
 @font-face {
     font-family: raj;
-    src: url(./BardloveDemoRegular.ttf);
+    src: url(./EagleHorizonP.ttf);
+}
+@font-face {
+    font-family: raja;
+    src: url(./Rockybilly.ttf);
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-html body{
+html, body{
+    height: 100%;
+    width: 100%;  
+}
+
+#box1{
     height: 100%;
     width: 100%;
-    background: #f4f1f1;
-}
-#header{
-    height: 150px;
-    width: 100%;
-    background: rgb(10, 10, 53);
-
-}
-#header h1{
-    color: white;
+    background-image: url(./nissan.avif);
+    background-size: cover;
+    background-position:center;
     text-align: center;
-    padding-top: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#header p{
-    color: white;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 50px;
 
 }
+#box1 h1{
+  color: beige;
+  font-family: raj;
+  font-size: 100px;
+  font-style:italic;
+  font-weight: 400;
 
-.body{
-
-    padding-top: 10px;
-    height: auto;
-    width: 60%;
-    word-wrap: break-word;
-    text-align: center;
-    margin: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#box1 button{
+    margin: 30px;
+    padding: 15px 30px ;
+   background-color:#460204;
+   font-size: 600;
+   font-weight: 600;
+   color: beige;
+   border: none;
+   border-radius:50px;
     
-
-}
-#skills ul li, #education ul li, #projects ul li, #contact div p{
-     background-color: white;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    width: 75%;
-    margin-left: 13%
-
 }
 
-#aboutme {
-    margin: auto;
-    width: 90%;
-    height: 150px;
-    text-align: center;
-    background-color: rgb(234, 209, 234);
-   
-
-}
-#aboutme p{
-    padding: 20px;}
-
-#education {
-    margin: auto; ;
-    width: 90%;
-    height: 220px;
-    text-align: center;
-    background-color: rgb(176, 231, 197);
-
-}
-#skills {
-    margin: auto; ;
-    width: 90%;
-    height: 320px;
-    text-align: center;
-    background-color: rgb(209, 234, 219);
-}
-#projects {
-    margin: auto; ;
-    width: 90%;
-    height: 220px;
-    text-align: center;
-    background-color: rgb(223, 143, 143);
-}
-#contact {
-    margin: auto; ;
-    width: 90%;
-    height: 220px;
-    text-align: center;
-    background-color: rgb(195, 177, 223);
-}
-#footer{
-    margin-top: 10px;
-    height: 80px;
-    width: 100%;
-    background: rgb(10, 10, 53);
-    text-align: center;
-    color: white;
-    padding-top: 30px;
-font-family: raj;
-
+footer{
     
+    text-align: center;
+    background-image: linear-gradient(90deg, #525F71,#090B0F );
+
 }
