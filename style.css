@@ -1,257 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-}
-html,body{
-    height: 100vh;
-    width: 100vw;
-}
-main{
-    height: 100vh;
-    width: 97vw;
-    background-color: white;
-    padding: 10px;
-    scrollbar-width: none;
-    display: grid;
-    grid-template-rows: 70px 1fr 1fr  50px 1fr;
-    grid-template-columns: 15%  58% 27%;
-    grid-template-areas: "header header header" 
-                         "aside  figure righttop"
-                         "aside  figure rightcenter"
-                         "aside infobar infobar" 
-                         "aside  section  section"
-                          ;
-                          grid-gap: 15px;
-
-   
-}
-header{
-    background:transparent;
- grid-area: header;
- display: flex;
- border:solid 0.5px rgb(210, 242, 242);
- border-radius: 15px;
- justify-items: center;
- align-items: center;
- padding: 20px;
-}
-header img{
-    height: 80px;
-    width:80px;
-}
-header icon{
-    height: 70px;
-    width: 70px;
-    
-}
-header button{
-    height: 40px;
-    padding-right:200px;
-    padding-left: 10px;
-    margin-right: 20%;
-    margin-left: 30%;
-    border-radius: 20px;
-    position: relative;
-    
-}
-header button #filter{
-    position: absolute ;
-    right: 10%; 
-}
-header a{
-    margin-left:150px ;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header #i {
-    padding: 10px;
-    border-radius: 50px;
-    border: solid 1px rgb(6, 5, 5);
-    margin-left: 10px;
-    
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-
-aside{
-    background: linear-gradient(135deg, rgba(224, 244, 245, 0.637),rgb(240, 206, 206));
-    grid-area: aside;
-    /* position: fixed; */
-    height: 100%;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 15px;   
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
-aside{
-
+main section {
+  height: 100%;
+  flex-grow: 1;
+  background: #000;
+  background-size: cover;
+  border: solid 3px;
+  background-position: center;
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
 }
-aside ul ,li{
-    text-decoration: none;
-    padding: 8px;
-    list-style: none;
-    font-weight: 450;
-    font-weight: 400;
+main section:hover {
+  flex-grow: 3;
 }
-figure{
-    grid-area: figure;
-    background: linear-gradient(135deg, rgba(224, 244, 245, 0.637),rgb(240, 206, 206));;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-
+main section:nth-child(1) {
+  background-image: url(./iron.jpg);
 }
-
-figure h1{
-    font-size: 30px;
-    width: 200px;
-    margin-top: 10px;
-    
+main section:nth-child(2) {
+  background-image: url(./Thor.jpg);
 }
-figure p{
-    font-size: 30px;
-    width: 280px;
-    margin-top: 10px;
+main section:nth-child(3) {
+  background-image: url(./download.jpg);
 }
-figure button{
-    padding: 10px;
-    width: 100px;
-    margin: 50px;
-    border-radius: 50px;
-    border: none;
-    background: rgb(240, 126, 126);
-     transition: all ease 0.5s;
+main section:nth-child(4) {
+  background-image: url(./cap.ame.jpg);
 }
-figure button:hover{
-    background: linear-gradient(rgb(236, 172, 172),rgb(191, 223, 233));
-}
-
-figure img{
-    height: 400px;
-    width: 400px;
-    position: absolute;
-    left: 630px;
-    bottom: 175px;
-    rotate: 10deg;
-    transition: all ease 2.5s ;
-}
-figure:hover img{
-    rotate: 360deg;
-
-}
-
-
-
-righttop{
-    background: linear-gradient(135deg,rgb(208, 206, 206), rgba(224, 244, 245, 0.637),rgb(239, 223, 223),rgb(240, 206, 206));;;
-    grid-area: righttop;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   border-radius: 15px;
-}
-righttop h2{
-    margin: 10px;
-    color: rgb(255, 71, 71);
-}
-
-
-rightcenter{
-    background:linear-gradient(135deg,rgb(208, 206, 206), rgba(224, 244, 245, 0.637),rgb(239, 223, 223),rgb(239, 226, 223));;;;
-    grid-area: rightcenter;
-    padding: 20px;
-     display: flex;
-     flex-direction: column;
-    position: relative;
-    font-size: 19px;
-    border-radius: 15px;
-
-}
-rightcenter h3{
-    font-size: 30px;
-    width: 200px;
-    margin-top: 10px;
-    display: inline-block;
-}
-rightcenter button{
-    padding: 10px;
-    width: 90px;
-    margin-top: 20px;
-    border-radius: 20px;
-    border:solid 0.5px rgb(243, 132, 132);
-    transition: all ease 0.8s;
-    
-}
-
-rightcenter img{
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    position: absolute;
-   margin-top: -40px;
-   margin-left: 150px;
-   rotate: 24deg;
-   transition: all ease 3.5s;
-} 
-rightcenter:hover img{
-    rotate :380deg;
-}
-
-
-rightcenter button:hover{
-    background: linear-gradient(360deg,rgb(212, 232, 232),rgb(239, 194, 201));
-}
-
-infobar{
-    background: linear-gradient(135deg,rgb(208, 206, 206), rgba(224, 244, 245, 0.637),rgb(212, 206, 206),rgb(239, 226, 223));;;;;
-     grid-area: infobar;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding: 20px;
-     border-radius: 15px;
-     
-     
-}
-infobar h2{
-font-weight: 500;
-font-size:large;
-}
-
-infobar button{
-padding:  10px;
-border-radius: 50px;
-border:none;
-transition: all ease 0.8s;
-}
-
-infobar button:hover{
-    background:linear-gradient(rgb(224, 211, 211),rgb(229, 171, 181),rgb(184, 233, 231))
-}
-section{
-    background:linear-gradient(135deg,rgb(208, 206, 206), rgba(224, 244, 245, 0.637),rgb(226, 177, 189),rgb(239, 226, 223));;;;;
-    grid-area: section; 
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 9px;
-}
-.items img{
-
-    height: 100px;
-    width: 170px;
-    object-fit: cover;
-    transition: all ease 0.4s;
-    border-radius: 10px;
-}
-.items img:hover{
-    scale: 1.1;
-}
-  
+main section:nth-child(5) {
+  background-image: url(./download\ dr.jpg);
+}/*# sourceMappingURL=style.css.map */

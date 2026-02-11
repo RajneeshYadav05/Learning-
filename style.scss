@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+
+    section{
+        height: 100%;
+        flex-grow: 1;
+         background: #000;
+         background-size:cover;
+         border: solid 3px ;
+         background-position: center;
+         transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        cursor: pointer;
+    }
+    section:hover{
+        flex-grow: 3;
+    }
+
+    section:nth-child(1){
+        background-image: url(./iron.jpg);
+    }
+     section:nth-child(2){
+        background-image: url(./Thor.jpg);
+    }
+     section:nth-child(3){
+        background-image: url(./download.jpg);
+
+    }
+     section:nth-child(4){
+        background-image: url(./cap.ame.jpg);
+    }
+     section:nth-child(5){
+        background-image: url(./download\ dr.jpg);
+    }
+
+
+
+
+
+}
