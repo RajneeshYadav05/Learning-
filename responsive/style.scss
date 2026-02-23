@@ -21,7 +21,9 @@ body{
 
 
 
-
+section{
+    max-width: 2000px;
+}
 
 
 main{
@@ -30,14 +32,85 @@ main{
   flex-direction: column;
   align-items: center;   
     
- section{
+ section.viewport1{
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     gap: 1rem;
-    max-width: 2000px;
-   
+    
+
+     .top{
+        width: 100%;
+        border-radius: 0.7rem;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+        } }
+
+     .bottom{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+         border-radius: 0.7rem;
+        padding: 0.7rem;
+        gap: 1.5rem;
+        background: rgb(53, 53, 53);
+        // justify-content: space-between;
+
+      .text{
+         display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+       
+        h1{
+            font-weight: 300;
+            font-size: 2.6rem;
+            
+        }
+
+        p{
+             font-weight: 100;
+            font-size: 1.5rem;
+            opacity: 0.8; 
+            line-height: 1.5;
+        }
+
+        button{
+            width: fit-content;
+            border: none;
+            outline: none;
+            border-radius: 0.5rem;
+            padding: 0.7rem 1rem;
+            cursor: pointer;
+        }
+      }
+     }  
+
+ }
+ section.viewport2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+
+    .top,
+    .bottom{
+         width: 100%;
+         display: flex;
+         justify-content: space-around;
+         text-align: center;
+    }
+ }
+ section.viewport3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    
 
      .top{
         width: 100%;
@@ -89,11 +162,12 @@ main{
 
  }
 
+
 }
 @media
  (min-width: 1200px){
     main{
-        section{
+        section.viewport1{
             flex-direction: row;
             gap: 0.7rem;
             .top{
@@ -107,14 +181,40 @@ main{
                 gap: 1.5rem;
                 h1{
                     font-size: 3.5rem;
-        
                 }
                 p{
-                    font-size: 2.5rem;
+                font-size: 2.5rem;
                 }
                }
             }
 
         }
+        section.viewport2{
+            flex-direction: row;
+        }
+         section.viewport3{
+            flex-direction: row-reverse;
+            gap: 0.7rem;
+            .top{
+                width: 50%;
+            }
+            .bottom{
+                width: 50%;
+                justify-content: space-between;
+                padding: 3rem;
+               .text{
+                gap: 1.5rem;
+                h1{
+                    font-size: 3.5rem;
+                }
+                p{
+                font-size: 2rem;
+                }
+               }
+            }
+
+        }
+
+
     }
 }
